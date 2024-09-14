@@ -1,0 +1,4 @@
+Usuário: admin, Senha: 1234
+Usuário: Pedro, Senha: deucerto
+Usuário: thamiris, Senha: 123456
+
