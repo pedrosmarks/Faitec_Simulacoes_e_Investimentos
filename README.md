@@ -7,7 +7,7 @@ Bem-vindo ao Sistema de Auxílio na educação financeira e Opções de Investim
 
 Este sistema foi desenvolvido para ajudar os usuários a compreender melhor como funciona a educação financeira, também aprender sobre as diversas opções de investimentos, contribuindo assim em um melhor gerenciamento de suas finanças de maneira eficiente e alcançar seus objetivos financeiros de curto, médio e longo prazo.
 
-## Funcionalidadesa
+## Funcionalidades
 - Materiais de Estudos - Estude e aprenda sobre vários tópicos básicos e avançados sobre assuntos financeiros.
 - Simulações de Investimentos - Aqui você pode fazer uma simulação para obter um determinado valor, quanto tempo vai ser necessário, oferecendo a possibilidade de incluir vários cenários como entrada, entre outros.
 
