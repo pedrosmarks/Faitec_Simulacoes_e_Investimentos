@@ -6,7 +6,7 @@ import br.com.faitec.sistemadeinvestimentos.controladores.ControladorDeCena;
 import javafx.fxml.FXML;
 
 public class ControleMenu {
-    public static final String FXML_PATH = "tela-menu-selecao.fxml";
+    public static final String FXML_PATH = "tela_menu_selecao.fxml";
 
     @FXML
     protected void onMaterialClick() throws IOException {
@@ -15,6 +15,6 @@ public class ControleMenu {
 
     @FXML
     protected void onSimulacaoClick() throws IOException {
-	ControladorDeCena.trocarCena(ControleEscolhaSimlacao.FXML_PATH);
+	ControladorDeCena.trocarCena(ControleEscolhaSimulacao.FXML_PATH);
     }
 }

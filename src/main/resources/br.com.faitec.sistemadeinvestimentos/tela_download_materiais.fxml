@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.faitec.sistemasdeinvestimentos.TelaDownloadMateriais">
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.faitec.sistemadeinvestimentos.viewscontroller.ControleMaterial">
    <children>
       <Pane prefHeight="78.0" prefWidth="970.0" style="-fx-background-color: #3498DB;">
          <children>
