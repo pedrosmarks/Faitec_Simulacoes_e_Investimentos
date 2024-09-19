@@ -29,12 +29,12 @@
             <Image url="@../assets/Captura%20de%20tela%202024-09-14%20102042.png" />
          </image>
       </ImageView>
-      <Text layoutX="146.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Material de estudo" textAlignment="CENTER" wrappingWidth="213.249755859375">
+      <Text layoutX="146.0" layoutY="151.0" onMouseClicked="#onMaterialClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Material de estudo" textAlignment="CENTER" wrappingWidth="213.249755859375">
          <font>
             <Font name="System Bold" size="35.0" />
          </font>
       </Text>
-      <Text layoutX="640.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema de simulações" textAlignment="CENTER" wrappingWidth="213.249755859375">
+      <Text layoutX="640.0" layoutY="151.0" onMouseClicked="#onSimulacaoClick" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema de simulações" textAlignment="CENTER" wrappingWidth="213.249755859375">
          <font>
             <Font name="System Bold" size="35.0" />
          </font>
