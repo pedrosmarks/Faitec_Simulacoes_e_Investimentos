@@ -1,6 +1,8 @@
 module br.com.faitec.sistemadeinvestimentos {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.xml;
+    requires java.desktop;
 
 
     exports br.com.faitec.sistemadeinvestimentos.main;

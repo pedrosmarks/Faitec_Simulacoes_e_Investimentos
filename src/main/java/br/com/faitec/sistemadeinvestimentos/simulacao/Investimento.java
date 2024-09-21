@@ -1,38 +1,25 @@
 package br.com.faitec.sistemadeinvestimentos.simulacao;
 
-import java.util.Scanner;
+
+import java.io.IOException;
 
 public class Investimento {
 
 
-    public static void simularInvestimento() {
-        Scanner scanner = new Scanner(System.in);
+    public static void simularInvestimento(int tipoInvestimento, String inicial, String mensal, int meses ) throws IOException {
+
+        double valorInicial = Double.parseDouble(inicial);
+
+        double valorMensal = Double.parseDouble(mensal);
 
 
-        System.out.println("Escolha o tipo de investimento:");
-        System.out.println("1. Poupança");
-        System.out.println("2. Tesouro Direto");
-        System.out.println("3. CDBs");
-        System.out.println("4. Debêntures");
-        System.out.println("5. Fundos Imobiliários");
-        System.out.println("6. Bolsa de Valores");
-        System.out.println("7. Criptomoedas");
-        System.out.println("8. Day Trade");
-        int tipoInvestimento = scanner.nextInt();
-
-        System.out.println("Entre com o valor inicial: ");
-        double valorInicial = scanner.nextDouble();
-
-        System.out.println("Entre com o valor mensal: ");
-        double valorMensal = scanner.nextDouble();
-
-        System.out.println("Entre com o período em meses: ");
-        int meses = scanner.nextInt();
 
         double taxaJuros = obterTaxaJuros(tipoInvestimento);
         double montanteFinal = calcularMontante(valorInicial, valorMensal, meses, taxaJuros);
 
         System.out.printf("O montante final após %d meses será: R$ %.2f%n", meses, montanteFinal);
+
+
     }
 
     private static double obterTaxaJuros(int tipoInvestimento) {

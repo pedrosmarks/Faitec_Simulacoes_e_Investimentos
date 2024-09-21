@@ -17,4 +17,10 @@ public class ControleMenu {
     protected void onSimulacaoClick() throws IOException {
 	ControladorDeCena.trocarCena(ControleEscolhaSimulacao.FXML_PATH);
     }
+
+
+    @FXML
+    protected void deslogar() throws IOException{
+        ControladorDeCena.trocarCena(ControleLogin.FXML_PATH);
+    }
 }
