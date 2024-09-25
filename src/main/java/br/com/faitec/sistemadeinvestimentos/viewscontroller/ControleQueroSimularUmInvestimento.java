@@ -22,7 +22,7 @@ public class ControleQueroSimularUmInvestimento {
 
     @FXML
     protected void retorna() throws IOException {
-	ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), "tela_escolha_simulacao.fxml");
+	ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), ControleEscolhaSimulacao.FXML_PATH);
     }
 
     @FXML
@@ -48,31 +48,39 @@ public class ControleQueroSimularUmInvestimento {
     @FXML
     protected void simular() throws IOException {
 
-	int investimento = 0;
+	int investimentoTipo = 0;
 
 	if (choiceBox.getValue().equals("Poupança")) {
-	    investimento = 1;
+	    investimentoTipo = 1;
 	} else if (choiceBox.getValue().equals("Tesouro Direto")) {
-	    investimento = 2;
+	    investimentoTipo = 2;
 	} else if (choiceBox.getValue().equals("Debêntures")) {
-	    investimento = 3;
+	    investimentoTipo = 3;
 	} else if (choiceBox.getValue().equals("CDB")) {
-	    investimento = 4;
+	    investimentoTipo = 4;
 	} else if (choiceBox.getValue().equals("Fundos Imobiliarios")) {
-	    investimento = 5;
+	    investimentoTipo = 5;
 	} else if (choiceBox.getValue().equals("Bolsa de Valores")) {
-	    investimento = 6;
+	    investimentoTipo = 6;
 	} else if (choiceBox.getValue().equals("Criptomoedas")) {
-	    investimento = 7;
+	    investimentoTipo = 7;
 	} else {
-	    investimento = 8;
+	    investimentoTipo = 8;
 	}
 
 	String inicial = valorInicial.getText();
 	String mensal = depositoMensal.getText();
 	int tempo = Integer.parseInt(tempoInvestimento.getText());
 
-	Investimento.simularInvestimento(investimento, inicial, mensal, tempo);
+	dataContainer.setInvestimentoTipo(investimentoTipo);
+	dataContainer.setInvestimentoValorInicial(inicial);
+	dataContainer.setInvestimentoValorMensal(mensal);
+	dataContainer.setInvestimentoDuracao(tempo);
+
+	dataContainer.setInvestimentoValorFinal(Investimento.simularInvestimento(dataContainer));
+
+	ControladorDeCena.trocarCena(new ControleResultadoInvestimento(dataContainer),
+		ControleResultadoInvestimento.FXML_PATH);
     }
 
 }

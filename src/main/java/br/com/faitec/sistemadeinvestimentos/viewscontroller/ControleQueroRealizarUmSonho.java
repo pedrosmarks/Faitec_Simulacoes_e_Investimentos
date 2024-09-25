@@ -19,7 +19,7 @@ public class ControleQueroRealizarUmSonho {
 
     @FXML
     protected void retorna() throws IOException {
-	ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), "tela_escolha_simulacao.fxml");
+	ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), ControleEscolhaSimulacao.FXML_PATH);
     }
 
     @FXML
@@ -32,13 +32,15 @@ public class ControleQueroRealizarUmSonho {
     private TextField valorMensal;
 
     @FXML
-    protected void simular() {
+    protected void simular() throws IOException {
 
 	dataContainer.setSonhoValorQuePrecisa(valorQuePrecisa.getText());
 	dataContainer.setSonhoValorInicial(valorInicial.getText());
 	dataContainer.setSonhoValorMensal(valorMensal.getText());
 
-	Sonho.investimentos(dataContainer);
+	dataContainer.setResultadoSonhos(Sonho.investimentos(dataContainer));
+
+	ControladorDeCena.trocarCena(new ControleResultadoSonho(dataContainer), ControleResultadoSonho.FXML_PATH);
     }
 
 }
