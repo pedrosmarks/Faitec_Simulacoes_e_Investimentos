@@ -12,21 +12,21 @@ public class ControleMenu {
     private DataContainer dataContainer;
 
     public ControleMenu(DataContainer dataContainer) {
-	this.dataContainer = dataContainer;
+        this.dataContainer = dataContainer;
     }
 
     @FXML
     protected void onMaterialClick() throws IOException {
-	ControladorDeCena.trocarCena(new ControleMaterial(dataContainer), ControleMaterial.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleMaterial(dataContainer), ControleMaterial.FXML_PATH);
     }
 
     @FXML
     protected void onSimulacaoClick() throws IOException {
-	ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), ControleEscolhaSimulacao.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), ControleEscolhaSimulacao.FXML_PATH);
     }
 
     @FXML
     protected void deslogar() throws IOException {
-	ControladorDeCena.trocarCena(new ControleLogin(dataContainer), ControleLogin.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleLogin(dataContainer), ControleLogin.FXML_PATH);
     }
 }

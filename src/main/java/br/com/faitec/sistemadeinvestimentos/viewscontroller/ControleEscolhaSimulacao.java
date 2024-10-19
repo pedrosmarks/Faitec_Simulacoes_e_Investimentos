@@ -12,25 +12,24 @@ public class ControleEscolhaSimulacao {
     private DataContainer dataContainer;
 
     public ControleEscolhaSimulacao(DataContainer dataContainer) {
-	this.dataContainer = dataContainer;
+        this.dataContainer = dataContainer;
     }
 
     @FXML
     protected void simulaInvestimento() throws IOException {
-	ControladorDeCena.trocarCena(new ControleQueroSimularUmInvestimento(dataContainer),
-		ControleQueroSimularUmInvestimento.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleQueroSimularUmInvestimento(dataContainer),
+                ControleQueroSimularUmInvestimento.FXML_PATH);
     }
 
     @FXML
     protected void simulaSonho() throws IOException {
-	ControladorDeCena.trocarCena(new ControleQueroRealizarUmSonho(dataContainer),
-		ControleQueroRealizarUmSonho.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleQueroRealizarUmSonho(dataContainer),
+                ControleQueroRealizarUmSonho.FXML_PATH);
     }
 
     @FXML
     protected void retorna() throws IOException {
-	ControladorDeCena.trocarCena(new ControleEscolhaSimulacao(dataContainer), ControleEscolhaSimulacao.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleMenu(dataContainer), ControleMenu.FXML_PATH);
 
     }
-
 }

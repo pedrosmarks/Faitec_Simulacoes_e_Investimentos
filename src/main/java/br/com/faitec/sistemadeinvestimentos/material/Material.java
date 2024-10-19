@@ -5,45 +5,28 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
-import java.util.Scanner;
+import java.nio.file.attribute.FileTime;
 
 public class Material {
 
-    public static void listarEPDFs() {
-        String pathName = "src\\main\\resources\\pdfs";
-        File pasta = new File(pathName); //  caminho da sua pasta
-        File[] arquivos = pasta.listFiles((dir, name) -> name.toLowerCase().endsWith(".pdf"));
+    // Realiza o download do arquivo PDF
+    public static void fazerDownload(String fileName) throws IOException {
+        // Caminho do arquivo na pasta de resouces
+        String sourcePath = "src/main/resources/pdfs/" + fileName;
+        File sourceFile = new File(sourcePath);
 
-        Scanner scanner = new Scanner(System.in);
-
-        if (arquivos != null && arquivos.length > 0) {
-            System.out.println("Arquivos PDF disponíveis:");
-            for (int i = 0; i < arquivos.length; i++) {
-                System.out.println((i + 1) + ". " + arquivos[i].getName());
-            }
-
-            System.out.print("Escolha um arquivo para download: ");
-            int escolha = scanner.nextInt();
-            scanner.nextLine(); // Consumir a nova linha
-
-            if (escolha > 0 && escolha <= arquivos.length) {
-                fazerDownload(arquivos[escolha - 1]);
-            } else {
-                System.out.println("Escolha inválida.");
-            }
-        } else {
-            System.out.println("Nenhum arquivo PDF encontrado na pasta.");
+        // Verifica se o arquivo existe
+        if (!sourceFile.exists()) {
+            throw new IOException("Arquivo fonte não encontrado: " + sourcePath);
         }
-    }
 
-    public static void fazerDownload(File arquivo) {
-        Path destino = new File("D:\\" + arquivo.getName()).toPath(); // Substitua pelo caminho de destino
-        try {
-            Files.copy(arquivo.toPath(), destino, StandardCopyOption.REPLACE_EXISTING);
-            System.out.println("Download concluído: " + destino);
-        } catch (IOException e) {
-            System.out.println("Erro ao fazer download do arquivo: " + e.getMessage());
-        }
-    }
+        // Salva na pasta Downloads do usuário
+        Path destinationPath = new File(System.getProperty("user.home") + "\\Downloads\\" + fileName).toPath();
 
+        // Copia o arquivo para a pasta de destino
+        Files.copy(sourceFile.toPath(), destinationPath, StandardCopyOption.REPLACE_EXISTING);
+
+        // Atualiza o horário de modificação para o horário atual
+        Files.setLastModifiedTime(destinationPath, FileTime.fromMillis(System.currentTimeMillis()));
+    }
 }

@@ -9,14 +9,14 @@ import javafx.stage.Stage;
 public class SistemaSimulacao extends Application {
 
     public static void main(String[] args) {
-	launch();
+        launch();
     }
 
     @Override
     public void start(@SuppressWarnings("exports") Stage stage) throws Exception {
-	ControladorDeCena.setSceneStage(stage);
-	ControladorDeCena.trocarCena(new ControleLogin(new DataContainer()), ControleLogin.FXML_PATH);
-	stage.setResizable(false);
-	stage.show();
+        ControladorDeCena.setSceneStage(stage);
+        ControladorDeCena.trocarCena(new ControleLogin(new DataContainer()), ControleLogin.FXML_PATH);
+        stage.setResizable(false);
+        stage.show();
     }
 }

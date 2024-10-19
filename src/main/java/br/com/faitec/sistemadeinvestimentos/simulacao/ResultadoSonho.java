@@ -4,10 +4,10 @@ public class ResultadoSonho {
 
     private String investimento;
     private String risco;
-    private double ganhos;
+    private String ganhos;
     private int tempoNecessario;
 
-    public ResultadoSonho(String investimento, String risco, double ganhos, int tempoNecessario) {
+    public ResultadoSonho(String investimento, String risco, String ganhos, int tempoNecessario) {
         this.investimento = investimento;
         this.risco = risco;
         this.ganhos = ganhos;
@@ -30,11 +30,11 @@ public class ResultadoSonho {
         this.risco = risco;
     }
 
-    public double getGanhos() {
+    public String getGanhos() {
         return ganhos;
     }
 
-    public void setGanhos(double ganhos) {
+    public void setGanhos(String ganhos) {
         this.ganhos = ganhos;
     }
 

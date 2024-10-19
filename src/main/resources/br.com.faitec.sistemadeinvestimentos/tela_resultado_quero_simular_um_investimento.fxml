@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -17,21 +16,21 @@
                         <Font name="System Bold" size="45.0" />
                     </font>
                 </Text>
-                <ImageView fitHeight="78.0" fitWidth="96.0" layoutX="874.0">
+                <ImageView fx:id="retorna" fitHeight="78.0" fitWidth="96.0" layoutX="874.0" onMouseClicked="#retorna">
                     <image>
                         <Image url="@../assets/Captura%20de%20tela%202024-09-14%20110029.png" />
                     </image>
                 </ImageView>
             </children>
         </Pane>
-        <Text layoutX="43.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De acordo com o investimento escolhido o seu retorno será de aproximadamente" wrappingWidth="883.6905364990234">
+        <Text layoutX="43.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De acordo com o investimento escolhido, o seu retorno será de aproximadamente:" wrappingWidth="883.6905364990234">
             <font>
-                <Font size="24.0" />
+                <Font size="26.0" />
             </font>
         </Text>
-        <Text fx:id="resultadoInvestimento" layoutX="43.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="883.6905364990234">
+        <Text fx:id="resultadoInvestimento" layoutX="43.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="883.6905364990234">
             <font>
-                <Font size="24.0" />
+                <Font size="26.0" />
             </font>
         </Text>
         

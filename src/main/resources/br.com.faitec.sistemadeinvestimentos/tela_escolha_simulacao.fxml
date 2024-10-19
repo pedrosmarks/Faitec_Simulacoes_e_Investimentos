@@ -23,22 +23,22 @@
             </ImageView>
          </children>
       </Pane>
-      <Text layoutX="120.0" layoutY="167.0" onMouseClicked="#simulaSonho" strokeType="OUTSIDE" strokeWidth="0.0" text="Quero realizar um sonho" textAlignment="CENTER" wrappingWidth="242.13676452636713">
+      <Text layoutX="146.0" layoutY="151.0" onMouseClicked="#simulaSonho" strokeType="OUTSIDE" strokeWidth="0.0" text="Quero realizar um sonho" textAlignment="CENTER" wrappingWidth="242.13676452636713">
          <font>
             <Font name="System Bold" size="35.0" />
          </font>
       </Text>
-      <Text layoutX="625.0" layoutY="167.0" onMouseClicked="#simulaInvestimento" strokeType="OUTSIDE" strokeWidth="0.0" text="Quero simular investimento" textAlignment="CENTER" wrappingWidth="242.13676452636713">
+      <Text layoutX="640.0" layoutY="151.0" onMouseClicked="#simulaInvestimento" strokeType="OUTSIDE" strokeWidth="0.0" text="Quero simular investimento" textAlignment="CENTER" wrappingWidth="242.13676452636713">
          <font>
             <Font name="System Bold" size="35.0" />
          </font>
       </Text>
-      <ImageView fitHeight="212.0" fitWidth="266.0" layoutX="130.0" layoutY="270.0" onMouseClicked="#simulaSonho" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="212.0" fitWidth="266.0" layoutX="120.0" layoutY="220.0" onMouseClicked="#simulaSonho">
          <image>
             <Image url="@../assets/simularsonho.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="212.0" fitWidth="266.0" layoutX="654.0" layoutY="258.0" onMouseClicked="#simulaInvestimento" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="212.0" fitWidth="266.0" layoutX="614.0" layoutY="220.0" onMouseClicked="#simulaInvestimento">
          <image>
             <Image url="@../assets/escolherinvestimento.png" />
          </image>

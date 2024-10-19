@@ -35,28 +35,28 @@ public class ControleResultadoSonho {
     @FXML
     TableColumn<ResultadoSonho, String> ganhos;
 
-    public ControleResultadoSonho(DataContainer dataContainer) {
-	this.dataContainer = dataContainer;
+    public ControleResultadoSonho(DataContainer dataContainer)
+    {
+        this.dataContainer = dataContainer;
     }
 
     @FXML
     protected void retorna() throws IOException {
-	ControladorDeCena.trocarCena(new ControleQueroRealizarUmSonho(dataContainer),
-		ControleQueroRealizarUmSonho.FXML_PATH);
+        ControladorDeCena.trocarCena(new ControleQueroRealizarUmSonho(dataContainer),
+                ControleQueroRealizarUmSonho.FXML_PATH);
     }
 
     @FXML
     public void initialize() {
-	resultadoSonhos = dataContainer.getResultadoSonhos();
+        resultadoSonhos = dataContainer.getResultadoSonhos();
 
-	investimento.setCellValueFactory(new PropertyValueFactory<>("investimento"));
-	tempoNecessario.setCellValueFactory(new PropertyValueFactory<>("tempoNecessario"));
-	risco.setCellValueFactory(new PropertyValueFactory<>("risco"));
-	ganhos.setCellValueFactory(new PropertyValueFactory<>("ganhos"));
+        investimento.setCellValueFactory(new PropertyValueFactory<>("investimento"));
+        tempoNecessario.setCellValueFactory(new PropertyValueFactory<>("tempoNecessario"));
+        risco.setCellValueFactory(new PropertyValueFactory<>("risco"));
+        ganhos.setCellValueFactory(new PropertyValueFactory<>("ganhos"));
 
-	resultadoSonhosObservable = FXCollections.observableArrayList(resultadoSonhos);
+        resultadoSonhosObservable = FXCollections.observableArrayList(resultadoSonhos);
 
-	tabelaResultadoSonho.setItems(resultadoSonhosObservable);
+        tabelaResultadoSonho.setItems(resultadoSonhosObservable);
     }
-
 }

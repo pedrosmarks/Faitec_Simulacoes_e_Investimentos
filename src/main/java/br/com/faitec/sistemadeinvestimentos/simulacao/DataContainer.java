@@ -25,106 +25,106 @@ public class DataContainer {
     private DoubleProperty investimentoValorFinal = new SimpleDoubleProperty();
 
     public StringProperty sonhoValorQuePrecisaProperty() {
-	return sonhoValorQuePrecisa;
+        return sonhoValorQuePrecisa;
     }
 
     public String getSonhoValorQuePrecisaValue() {
-	return sonhoValorQuePrecisaProperty().get();
+        return sonhoValorQuePrecisaProperty().get();
     }
 
     public void setSonhoValorQuePrecisa(String sonhoValorQuePrecisa) {
-	sonhoValorQuePrecisaProperty().set(sonhoValorQuePrecisa);
+        sonhoValorQuePrecisaProperty().set(sonhoValorQuePrecisa);
     }
 
     public StringProperty sonhoValorInicialProperty() {
-	return sonhoValorInicial;
+        return sonhoValorInicial;
     }
 
     public String getSonhoValorInicialValue() {
-	return sonhoValorInicialProperty().get();
+        return sonhoValorInicialProperty().get();
     }
 
     public void setSonhoValorInicial(String sonhoValorInicial) {
-	sonhoValorInicialProperty().set(sonhoValorInicial);
+        sonhoValorInicialProperty().set(sonhoValorInicial);
     }
 
     public StringProperty sonhoValorMensalProperty() {
-	return sonhoValorMensal;
+        return sonhoValorMensal;
     }
 
     public String getSonhoValorMensalValue() {
-	return sonhoValorMensalProperty().get();
+        return sonhoValorMensalProperty().get();
     }
 
     public void setSonhoValorMensal(String sonhoValorMensal) {
-	sonhoValorMensalProperty().set(sonhoValorMensal);
+        sonhoValorMensalProperty().set(sonhoValorMensal);
     }
 
     public ArrayList<ResultadoSonho> getResultadoSonhos() {
-	return resultadoSonhos;
+        return resultadoSonhos;
     }
 
     public void setResultadoSonhos(ArrayList<ResultadoSonho> resultadoSonhos) {
-	this.resultadoSonhos = resultadoSonhos;
+        this.resultadoSonhos = resultadoSonhos;
     }
 
     public IntegerProperty investimentoTipoProperty() {
-	return investimentoTipo;
+        return investimentoTipo;
     }
 
     public int getInvestimentoTipoValue() {
-	return investimentoTipoProperty().get();
+        return investimentoTipoProperty().get();
     }
 
     public void setInvestimentoTipo(int investimentoTipo) {
-	investimentoTipoProperty().set(investimentoTipo);
+        investimentoTipoProperty().set(investimentoTipo);
     }
 
     public StringProperty investimentoValorInicialProperty() {
-	return investimentoValorInicial;
+        return investimentoValorInicial;
     }
 
     public String getInvestimentoValorInicialValue() {
-	return investimentoValorInicialProperty().get();
+        return investimentoValorInicialProperty().get();
     }
 
     public void setInvestimentoValorInicial(String investimentoValorInicial) {
-	investimentoValorInicialProperty().set(investimentoValorInicial);
+        investimentoValorInicialProperty().set(investimentoValorInicial);
     }
 
     public StringProperty investimentoValorMensalProperty() {
-	return investimentoValorMensal;
+        return investimentoValorMensal;
     }
 
     public String getInvestimentoValorMensalValue() {
-	return investimentoValorMensalProperty().get();
+        return investimentoValorMensalProperty().get();
     }
 
     public void setInvestimentoValorMensal(String investimentoValorMensal) {
-	investimentoValorMensalProperty().set(investimentoValorMensal);
+        investimentoValorMensalProperty().set(investimentoValorMensal);
     }
 
     public IntegerProperty investimentoDuracaoProperty() {
-	return investimentoDuracao;
+        return investimentoDuracao;
     }
 
     public int getInvestimentoDuracaoValue() {
-	return investimentoDuracaoProperty().get();
+        return investimentoDuracaoProperty().get();
     }
 
     public void setInvestimentoDuracao(int investimentoDuracao) {
-	investimentoDuracaoProperty().set(investimentoDuracao);
+        investimentoDuracaoProperty().set(investimentoDuracao);
     }
 
     public DoubleProperty investimentoValorFinalProperty() {
-	return investimentoValorFinal;
+        return investimentoValorFinal;
     }
 
-    public double getInvestimentoValorFinalValue() {
-	return investimentoValorFinalProperty().get();
+    public Double getInvestimentoValorFinalValue() {
+        return investimentoValorFinalProperty().get();
     }
 
-    public void setInvestimentoValorFinal(double investimentoValorFinal) {
-	investimentoValorFinalProperty().set(investimentoValorFinal);
+    public void setInvestimentoValorFinal(Double investimentoValorFinal) {
+        investimentoValorFinalProperty().set(investimentoValorFinal);
     }
 }
