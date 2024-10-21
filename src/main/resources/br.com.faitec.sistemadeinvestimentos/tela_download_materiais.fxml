@@ -24,20 +24,64 @@
             </ImageView>
          </children>
       </Pane>
-      <Text layoutX="43.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clique nos documentos que você deseja realizar o download" wrappingWidth="731.4906616210938">
+      <Text layoutX="90.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clique nos documentos que você deseja realizar o download" textAlignment="CENTER" wrappingWidth="780.4906616210938">
          <font>
-            <Font size="26.0" />
+            <Font size="28.0" />
          </font>
       </Text>
-      <Hyperlink fx:id="downloadLink" focusTraversable="false" layoutX="30.0" layoutY="174.0" onAction="#handleDownloadAction" style="-fx-background-color: transparent;" styleClass="no-focus-ring" text="1- Introdução ao mundo de investimentos" />
-      <Hyperlink fx:id="downloadLink2" focusTraversable="false" layoutX="30.0" layoutY="198.0" text="2- O que são Juros - Conceitos Básicos e Tipos de Juros" />
-      <Hyperlink fx:id="downloadLink3" focusTraversable="false" layoutX="29.0" layoutY="222.0" text="3- A Taxa Selic O que é e Como Afeta a Economia" />
-      <Hyperlink fx:id="downloadLink4" focusTraversable="false" layoutX="30.0" layoutY="246.0" text="4- Investimentos em Renda Fixa Tesouro Direto, CDB, LCI e LCA" />
-      <Hyperlink fx:id="downloadLink5" focusTraversable="false" layoutX="29.0" layoutY="270.0" text="5- Fundos de Investimento -Tipos, Funcionamento e Vantagens" />
-      <Hyperlink fx:id="downloadLink6" focusTraversable="false" layoutX="29.0" layoutY="294.0" text="6 - Investimentos em Ações" />
-      <Hyperlink fx:id="downloadLink7" focusTraversable="false" layoutX="29.0" layoutY="318.0" text="7- Análise Fundamentalista vs. Análise Técnica- Métodos de Avaliação de Investimentos" />
-      <Hyperlink fx:id="downloadLink8" focusTraversable="false" layoutX="29.0" layoutY="342.0" text="8- Diversificação de Portfólio -  Importância e Estratégias" />
-      <Hyperlink fx:id="downloadLink9" focusTraversable="false" layoutX="29.0" layoutY="366.0" text="9- O Papel da Inflação nos Investimentos e Como Protegê-los" />
-      <Hyperlink fx:id="downloadLink10" focusTraversable="false" layoutX="30.0" layoutY="390.0" text="10- Planejamento Financeiro" />
+      <Hyperlink fx:id="downloadLink" focusTraversable="false" layoutX="30.0" layoutY="180.0" onAction="#handleDownloadAction" style="-fx-background-color: transparent;" styleClass="no-focus-ring" text="1- Introdução ao mundo de investimentos">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink2" focusTraversable="false" layoutX="30.0" layoutY="210.0" text="2- O que são Juros - Conceitos Básicos e Tipos de Juros">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink3" focusTraversable="false" layoutX="30.0" layoutY="240.0" text="3- A Taxa Selic - O que é - E Como Afeta a Economia">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink4" focusTraversable="false" layoutX="30.0" layoutY="270.0" text="4- Investimentos em Renda Fixa - Tesouro Direto, CDB, LCI e LCA">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink5" focusTraversable="false" layoutX="29.0" layoutY="300.0" text="5- Fundos de Investimento - Tipos, Funcionamento e Vantagens">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink6" focusTraversable="false" layoutX="30.0" layoutY="330.0" text="6- Investimentos em Ações">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink7" focusTraversable="false" layoutX="30.0" layoutY="360.0" text="7- Análise Fundamentalista vs. Análise Técnica - Métodos de Avaliação de Investimentos">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink8" focusTraversable="false" layoutX="30.0" layoutY="390.0" text="8- Diversificação de Portfólio - Importância e Estratégias">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink9" focusTraversable="false" layoutX="30.0" layoutY="420.0" text="9- O Papel da Inflação nos Investimentos - E Como Protegê-los">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink10" focusTraversable="false" layoutX="30.0" layoutY="450.0" text="10- Planejamento Financeiro">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <Hyperlink fx:id="downloadLink11" focusTraversable="false" layoutX="30.0" layoutY="480.0" onAction="#handleDownloadAction" text="11- Referências">
+         <font>
+            <Font size="14.0" />
+         </font></Hyperlink>
+      <ImageView fitHeight="235.0" fitWidth="242.0" layoutX="637.0" layoutY="202.0">
+         <image>
+            <Image url="@../../../../../../Users/Thamiris/Desktop/WhatsApp_Image_2024-10-21_at_14.43.23-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="245.0" fitWidth="232.0" layoutX="684.0" layoutY="192.0">
+         <image>
+            <Image url="@../assets/imagemMaterial.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

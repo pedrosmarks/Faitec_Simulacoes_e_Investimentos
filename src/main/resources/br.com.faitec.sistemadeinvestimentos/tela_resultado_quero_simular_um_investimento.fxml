@@ -18,21 +18,31 @@
                 </Text>
                 <ImageView fx:id="retorna" fitHeight="78.0" fitWidth="96.0" layoutX="874.0" onMouseClicked="#retorna">
                     <image>
-                        <Image url="@../assets/Captura%20de%20tela%202024-09-14%20110029.png" />
+                        <Image url="@../assets/voltar.png" />
                     </image>
                 </ImageView>
             </children>
         </Pane>
-        <Text layoutX="43.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De acordo com o investimento escolhido, o seu retorno será de aproximadamente:" wrappingWidth="883.6905364990234">
+        <Text layoutX="43.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="De acordo com o investimento escolhido, o seu retorno será de aproximadamente:" textAlignment="CENTER" wrappingWidth="883.6905364990234">
             <font>
-                <Font size="26.0" />
+                <Font size="36.0" />
             </font>
         </Text>
-        <Text fx:id="resultadoInvestimento" layoutX="43.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="883.6905364990234">
+        <Text fx:id="resultadoInvestimento" layoutX="43.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="883.6905364990234">
             <font>
-                <Font size="26.0" />
+                <Font size="36.0" />
             </font>
         </Text>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="47.0" layoutY="314.0">
+         <image>
+            <Image url="@../assets/imagem1resultadoInvestimento.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="754.0" layoutY="314.0">
+         <image>
+            <Image url="@../assets/imagem2resultadoInvestimento.png" />
+         </image>
+      </ImageView>
         
     </children>
 </AnchorPane>

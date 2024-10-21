@@ -52,7 +52,7 @@ public class Investimento {
 		return Math.round(montante * 100.0) / 100.0;
 	}
 
-	// Método para formatar o valor como moeda brasileira
+	// Metodo para formatar o valor como moeda brasileira
 	public static String formatarComoMoeda(double valor) {
 		NumberFormat formatoMoeda = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
 		return formatoMoeda.format(valor);

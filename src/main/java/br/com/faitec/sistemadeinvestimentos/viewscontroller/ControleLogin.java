@@ -7,6 +7,7 @@ import java.io.IOException;
 import br.com.faitec.sistemadeinvestimentos.controladores.ControladorDeCena;
 import br.com.faitec.sistemadeinvestimentos.simulacao.DataContainer;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
@@ -57,7 +58,11 @@ public class ControleLogin {
 		if (loginBemSucedido) {
 			ControladorDeCena.trocarCena(new ControleMenu(dataContainer), ControleMenu.FXML_PATH);
 		} else {
-			System.out.println("Nome de usuário ou senha incorretos.");
+			Alert alert = new Alert(Alert.AlertType.ERROR);
+			alert.setTitle("Dados Incorretos");
+			alert.setHeaderText("Não foi possível, realizar o login");
+			alert.setContentText("Confirme seu login ou sua senha");
+			alert.showAndWait();;
 		}
 	}
 }
