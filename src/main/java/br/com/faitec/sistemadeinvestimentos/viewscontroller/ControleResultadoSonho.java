@@ -35,8 +35,7 @@ public class ControleResultadoSonho {
     @FXML
     TableColumn<ResultadoSonho, String> ganhos;
 
-    public ControleResultadoSonho(DataContainer dataContainer)
-    {
+    public ControleResultadoSonho(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
     }
 

@@ -44,5 +44,5 @@ public class ResultadoSonho {
 
     public void setTempoNecessario(int tempoNecessario) {
         this.tempoNecessario = tempoNecessario;
-   }
+    }
 }

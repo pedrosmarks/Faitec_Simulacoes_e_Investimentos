@@ -13,8 +13,7 @@ public class ControleResultadoInvestimento {
 
     private DataContainer dataContainer;
 
-    public ControleResultadoInvestimento(DataContainer dataContainer)
-    {
+    public ControleResultadoInvestimento(DataContainer dataContainer) {
         this.dataContainer = dataContainer;
     }
 

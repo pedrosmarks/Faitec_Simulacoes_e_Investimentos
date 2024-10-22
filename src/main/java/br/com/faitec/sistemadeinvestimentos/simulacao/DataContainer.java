@@ -11,8 +11,6 @@ import javafx.beans.property.StringProperty;
 
 public class DataContainer {
 
-    // mudar o nome dessa classe para DataContainerDTO
-
     private StringProperty sonhoValorQuePrecisa = new SimpleStringProperty();
     private StringProperty sonhoValorInicial = new SimpleStringProperty();
     private StringProperty sonhoValorMensal = new SimpleStringProperty();

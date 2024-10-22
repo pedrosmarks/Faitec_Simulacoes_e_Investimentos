@@ -22,8 +22,7 @@ public class ControladorDeCena {
 
 		loader.setControllerFactory(new Callback<Class<?>, Object>() {
 			@Override
-			public Object call(Class<?> p)
-			{
+			public Object call(Class<?> p) {
 				return controller;
 			}
 		});
